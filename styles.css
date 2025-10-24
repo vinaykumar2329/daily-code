@@ -63,7 +63,7 @@ input:focus {
   color: #dc2626;
   font-size: 13px;
   margin-top: 4px;
-  display: block;
+  display: none;
   min-height: 16px; /* keeps space even if no error */
 }
 
