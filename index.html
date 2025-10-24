@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body{
             background-color: black;
@@ -27,8 +28,30 @@
 <body>
 <div class="mouse">
 </div>
-<h1>hello</h1>
-<h1>kaise ho</h1>
+
+<div class="container">
+    <form id="loginForm" novalidate>
+      <h2>Email & Password Validator</h2>
+
+      <!-- Email field -->
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <!-- Password field -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <button type="submit">Validate</button>
+    </form>
+  </div>
+
+
 
     
     <script src="script.js"></script>
